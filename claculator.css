@@ -1,0 +1,41 @@
+body{
+    background: #222222;
+
+}
+
+.container{
+    max-width: 200px;
+    display: grid;
+    grid-template-areas: 
+    "result"
+    "btn";
+    grid-template-columns: 300px;
+    grid-template-rows: (2, 1fr);
+    align-items: center;
+}
+
+.btnn{
+    display: grid;
+    grid-template-areas: 
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "btn btn btn btn";
+}
+
+
+.result{
+    grid-area: result;
+    color:#fff;
+    text-align: right;
+    font-size: 2rem;
+}
+
+.btn{
+    border:none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 11px;
+    margin: 5px 2px;
+}
